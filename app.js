@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 //allow cross origin request
 
@@ -28,6 +29,6 @@ app.use(
   })
 );
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log("now listening for request on port 4000");
 });
